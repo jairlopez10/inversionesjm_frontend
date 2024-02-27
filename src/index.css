@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+a {
+  font-size: 2.7rem;
+}
+
+div {
+  font-size: 1.7rem;
+}
+
+.contenedor {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* ---------------- Header ---------------------------*/
+
+header {
+  background-color: black;
+  margin-bottom: 3rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.divheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo img {
+  width: 16rem;
+}
+
+.navegacion {
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navegacion a {
+  color: #d9d9d9;
+  text-align: center;
+}
+
+.navegacion a:hover {
+  transition: all .5s;
+}
+
+.jugueteslink:hover {
+  background-image: linear-gradient(to right, #fc2a93, #4545b6); /* Cambia los colores según tus preferencias */
+  background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores webkit (como Safari) */
+  color: transparent; /* Hace que el color del texto sea transparente */
+}
+
+.ferreterialink:hover {
+  background-image: linear-gradient(to right, #dbff11, #e6241d); /* Cambia los colores según tus preferencias */
+  background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores webkit (como Safari) */
+  color: transparent; /* Hace que el color del texto sea transparente */
+}
+
+.divbarra {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.carrito {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .divheader {
+      flex-direction: row;
+  }
+  .navegacion {
+      display: flex;
+      flex-direction: row;
+      gap: 6rem;
+      margin-bottom: 0rem;
+  }
+  .menuicono {
+      visibility: hidden;
+  }
+  .logo img {
+      width: 18rem;
+  }
+}
